@@ -7,29 +7,26 @@ import java.util.Set;
 public class loneSum {
     public static void main(String[] args) {
 
+        System.out.println(loneSum(3,2,3));
+
     }
-    public int loneSum(int a, int b, int c) {
+    public static int loneSum(int a, int b, int c) {
+ArrayList<Integer> list = new ArrayList<>();
+list.add(a);
+list.add(b);
+list.add(c);
+int sum =0;
 
-        ArrayList<Integer> list = new ArrayList<>();
-        list.add(a);
-        list.add(b);
-        list.add(c);
-        int answer= 0;
-
-        for (Integer each: list
+        for (int each: list
              ) {
-            for (Integer each2:list
-                 ) {
-                if (each2==each){
-                    list.remove(each2);
+            for (int i = 0; i <list.size() ; i++) {
+                if (list.get(i)==each){
+
                 }
             }
         }
-        for (Integer each3:list
-             ) {
-            answer+=each3;
-        }
-       return answer;
+       sum= list.get(0)+list.get(1)+list.get(2);
 
+        return sum;
     }
 }
