@@ -6,6 +6,8 @@ public class MoveAllzeroEnd {
     public static void main(String[] args) {
         int[] arr = {1,0,2,0,0,7};
 
+        System.out.println(Arrays.toString(moveallzero(arr
+        )));
     }
     public static int[] moveallzero(int[] array){
 
@@ -33,10 +35,10 @@ public class MoveAllzeroEnd {
 
         int[] combine = new int[array.length];
 
-        Arrays.copyOf(arrayfornotzero,arrayfornotzero.length);
-        Arrays.copyOf(zero,zero.length);
+        combine = Arrays.copyOf(arrayfornotzero,array.length);
 
-return
+
+return combine;
         }
 
 
