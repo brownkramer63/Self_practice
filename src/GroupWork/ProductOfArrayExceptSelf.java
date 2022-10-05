@@ -13,7 +13,6 @@ public class ProductOfArrayExceptSelf {
     //a is the length of the array duh
     public static int[] productExceptSelf(int[] arr, int a){
 
-        //dont understand this part just adding
 
         int[] left = new int[a];
         int[] right = new int[a];
@@ -34,6 +33,7 @@ public class ProductOfArrayExceptSelf {
             right[j]=arr[j+1]*right[j+1];
         }
 
+        //this will add both sides up and return the new array
         for (int i = 0; i <a ; i++) {
             answer[i]=left[i]*right[i];
         }
