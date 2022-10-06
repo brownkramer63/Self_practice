@@ -29,7 +29,6 @@ public static void find(int[] arr){
         System.out.print(part1.pop() + " ");
     }
 
-
 }
 
 }
