@@ -10,7 +10,7 @@ public class LongestSubString {
     }
     public static int lengthOfLongestSubstring(String s) {
 
-        // Base condition
+        // Base condition//
         if (s == null || s.equals("")) {
             return 0;
         }
