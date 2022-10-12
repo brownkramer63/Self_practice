@@ -6,7 +6,7 @@ public class IntersectionofTwoLinkedLists {
         public int data;
         public Link next;
 
-        //i dont really get this
+        //i kinda get this link class part
         public Link(int data) {
             this.data=data;
             this.next=null;
