@@ -6,7 +6,7 @@ public class Link {
 
 //i dont really get this
     public Link(int data) {
-        this.data = data;
-        this.next = null;
+       data=data;
+       next=null;
     }
 }
