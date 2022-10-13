@@ -8,32 +8,29 @@ public class IntersectionofTwoLinkedLists {
 
         //i kinda get this link class part
         public Link(int data) {
-            this.data=data;
-            this.next=null;
+            this.data = data;
+            this.next = null;
         }
 
     }
-    public Link getIntersectionLink(Link head1,Link  head2){
 
-        while(head1!=null){
-            Link temp= head2;
-            while(temp !=null){
+    public Link getIntersectionLink(Link head1, Link head2) {
+
+        while (head1 != null) {
+            Link temp = head2;
+            while (temp != null) {
 
                 //if both are same:
-                if(temp==head1){
+                if (temp == head1) {
                     return head1;
                 }
-                temp=temp.next;
+                temp = temp.next;
             }
-            head1=head1.next;
+            head1 = head1.next;
         }
         //if there is no intersection:
         return null;
     }
-
-
-
-
 
 
     public static void main(String[] args) {
@@ -84,9 +81,6 @@ public class IntersectionofTwoLinkedLists {
         }
 
     }
-
-
-
 
 
 }

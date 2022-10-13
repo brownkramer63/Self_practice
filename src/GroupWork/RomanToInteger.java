@@ -2,7 +2,7 @@ package GroupWork;
 
 public class RomanToInteger {
     public static void main(String[] args) {
-        System.out.println(romanToInt("IXM"));
+        System.out.println(romanToInt("MXI"));
     }
 public static int romanToInt(String s){
 
