@@ -10,6 +10,7 @@ public class firstChar {
     public Map<String, String> firstChar(String[] strings) {
 Map<String, String >Map3 = new HashMap<>();
 String empty="";
+//need to fix
 //i need to check each string againest all other strings im thinking nested loop
         for (String each:strings
              ) {
