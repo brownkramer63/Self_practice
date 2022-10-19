@@ -7,30 +7,31 @@ import java.util.Stack;
 
 public class PalindromeLinkedList {
     //our link class with constructor
-    public class Node01 {
+
+    static class Node01 {
         public int data;
         public Node01 next;
 
         public Node01(int data) {
-            this.data = data;
-            this.next = null;
+            data = data;
+            next = null;
         }
     }
 
     //our main class with linked list we will make
     public static void main(String[] args) {
 
-//        Node01 one = new Node01(1);
-//        Node01 two= new Node01(2);
-//        Node01 three = new Node01(3);
-//        Node01 four= new Node01(2);
-//        Node01 five = new Node01(1);
-//
-//        one.next=two;
-//        two.next=three;
-//        three.next=four;
-//        four.next=five;
-//        System.out.println(isPalindromeLL(one));
+        Node01 one = new Node01(1);
+        Node01 two= new Node01(2);
+        Node01 three = new Node01(3);
+        Node01 four= new Node01(2);
+        Node01 five = new Node01(1);
+
+        one.next=two;
+        two.next=three;
+        three.next=four;
+        four.next=five;
+        System.out.println(isPalindromeLL(one));
 
 
     }
