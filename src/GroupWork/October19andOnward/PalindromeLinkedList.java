@@ -1,8 +1,5 @@
 package GroupWork.October19andOnward;
 
-import GroupWork.Link;
-import GroupWork.Node;
-
 import java.util.Stack;
 
 public class PalindromeLinkedList {
