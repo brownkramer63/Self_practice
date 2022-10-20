@@ -28,7 +28,7 @@ public class SingleNumber {
         //returning the value that is not a duplicate
         for (Integer key:nums
              ) {
-            if (map1.get(key)!=2){
+            if (map1.get(key)==1){
                 return key;
             }
         }
