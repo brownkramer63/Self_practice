@@ -11,7 +11,7 @@ public class scores100 {
            if (scores[i]==100){
                if (scores[i-1]==100){
                   answer=true;
-                  break;
+                  break;//need a commit
                }
                if (scores[i+1]==100){
                    answer=true;
