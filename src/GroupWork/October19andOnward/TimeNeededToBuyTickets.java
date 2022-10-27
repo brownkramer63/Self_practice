@@ -9,7 +9,7 @@ public class TimeNeededToBuyTickets {
 
     }
 
-    public static int timerequiredtobuy(int[] tickets, int person) {
+    public static int timerequiredtobuymine(int[] tickets, int person) {
         int time = 0;
         ArrayList<Integer> arry = new ArrayList<>();
 
@@ -25,5 +25,15 @@ public class TimeNeededToBuyTickets {
 
         return 0;
     }
+    public int timeRequiredToBuyfoundsolution(int[] tickets, int k) {
+        int ans = 0;
 
+        for (int i = 0; i < tickets.length; ++i)
+            if (i <= k)
+                ans += Math.min(tickets[i], tickets[k]);
+            else
+                ans += Math.min(tickets[i], tickets[k] - 1);
+
+        return ans;
+    }
 }
