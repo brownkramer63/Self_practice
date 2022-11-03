@@ -27,20 +27,40 @@ public class DeleteNNodes {
     eight.next=nine;
     nine.next=tail;
     tail.next=null;
+
+        System.out.println(DeleteNNodeAfterMNodes(head,2,2));
     }
    public static Link DeleteNNodeAfterMNodes(Link head,int m, int n){
-      Link current = head;
-      int count;
-      while (current!=null){
-          //skip m nodes
-          for (int i = 0; i <m && current!=null ; i++) {
-              current=current.next;
-          }
-          if (current==null){
-              return head;
-          }
+       // first assign head to current and create counter
+       // go through each element, check whether element equal to a
+       // continue to traverse check whether element number equal to b
+       // delete n nodes (write last a nodes will point last b nodes) => two pointer keep a delete b
 
-      }
-return null;
-   }
-}
+
+       Link current = head;
+       Link lastAnode = head;
+
+       while(current != null) {
+           int countA = m;
+           int countB = n;
+           //go through each element, check whether element equal to a
+           while (current != null && countA != 0) {
+               lastAnode = current;
+               current = current.next;
+
+
+               countA--;
+           }
+           //continue to traverse check whether element number equal to b
+           while (current != null && countB != 0) {
+               current = current.next;
+               countB--;
+           }
+           // delete n nodes (write last a nodes will point last b nodes) => two pointer keep a delete b
+
+           lastAnode.next = current;
+
+       }
+       return head;
+
+   }}
