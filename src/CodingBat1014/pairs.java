@@ -1,4 +1,4 @@
-package CodingBat919.CodingBat1014;
+package CodingBat1014;
 
 import java.util.HashMap;
 import java.util.Map;
