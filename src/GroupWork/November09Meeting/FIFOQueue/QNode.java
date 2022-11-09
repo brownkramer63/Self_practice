@@ -1,4 +1,4 @@
-package GroupWork.November09Meeting;
+package GroupWork.November09Meeting.FIFOQueue;
 
 public class QNode<T> {
    T value;
