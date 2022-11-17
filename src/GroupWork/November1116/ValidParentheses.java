@@ -1,5 +1,7 @@
 package GroupWork.November1116;
 
+import java.util.Stack;
+
 public class ValidParentheses {
     public static void main(String[] args) {
         String s="())";
@@ -31,5 +33,22 @@ public class ValidParentheses {
         }
        return count/2;
 
+    }
+    public static int longestValidParentheses(String s){
+        if(s==null){
+            return 0;
+        }
+        Stack<Integer> stack = new Stack();
+        int result = 0;
+        stack.push(-1);
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == ')' && stack.size() > 1 && s.charAt(stack.peek()) == '(') {
+                stack.pop();
+                result = Math.max(result, i - stack.peek());
+            } else {
+                stack.push(i);
+            }
+        }
+        return result;
     }
 }
