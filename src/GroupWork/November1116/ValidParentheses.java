@@ -7,6 +7,7 @@ public class ValidParentheses {
 
     }
 
+
     public static int validParentheseswrong(String s){
         int count = 0;
         char[] chars=s.toCharArray();
