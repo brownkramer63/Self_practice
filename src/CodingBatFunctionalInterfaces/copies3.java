@@ -11,5 +11,9 @@ strings.replaceAll(n -> n+n+n);
 
 return strings;
     }
+    public static List<Integer> noNeg(List<Integer> nums) {
+        nums.removeIf(n -> n<0);
+        return nums;
+    }
 
 }
