@@ -24,7 +24,7 @@ public class ReverseInteger {
                 stacker.push(each);
             }
 
-        }
+        }//review this later
         while (!stacker.isEmpty()){
             holder=holder+stacker.pop();
 
