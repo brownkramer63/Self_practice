@@ -1,21 +1,23 @@
 package LeetCode;
 
+import java.util.HashMap;
+
 public class TwoSum {
     public static void main(String[] args) {
 
     }
     public int[]twosum(int[] arr,int target){
-int[] answer={0,0};
-        for (int each:arr
-             ) {
-            for (int each2:arr
-                 ) {
-                if (each+each2==target){
-                   answer[0]=each;
-                   answer[1]=each2;
-                }
+
+        HashMap<Integer,Integer> map1 = new HashMap<>();
+        int counter= 0;
+        for (int i = 0; i <arr.length ; i++) {
+            counter= target-arr[i];
+            if (map1.containsKey(counter)){
+                return new int[]{i,map1.get(counter)};
             }
+            map1.put(arr[i],i);
+
         }
-        return answer;
+        return new int[]{0,0};
     }
 }
