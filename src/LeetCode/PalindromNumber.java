@@ -24,6 +24,7 @@ if (x<0){
         }
 while (!stack1.isEmpty()){
     holder=holder+stack1.pop();
+    ////
 }
 int answer = Integer.parseInt(holder);
 if (negative==true){
