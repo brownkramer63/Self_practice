@@ -7,7 +7,7 @@ public class sum3 {
 //
 //    sum3([1, 2, 3]) → 6
 //    sum3([5, 11, 2]) → 18
-//    sum3([7, 0, 0]) → 7
+//    sum3([7, 0, 0]) → 7555
 public static void main(String[] args) {
 
     int[] nums={1,2,3};
