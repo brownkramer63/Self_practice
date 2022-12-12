@@ -27,7 +27,7 @@ public class MissingNumber {
         }
 
 
-//review with group.
+//review with group.find with n log n solution
 return 0;
     }
 }
