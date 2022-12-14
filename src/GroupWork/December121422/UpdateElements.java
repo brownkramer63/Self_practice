@@ -8,6 +8,9 @@ public class UpdateElements {
         System.out.println(Arrays.toString(updateTheElements(arr)));
     }
     public static int[] updateTheElements(int[] arr){
+        if (arr.length<2){
+            return arr;
+        }
         int[] answer= new int[arr.length];
         answer[0]=arr[0]*arr[1];
         for (int i = 1; i <arr.length-1 ; i++) {

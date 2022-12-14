@@ -11,7 +11,8 @@ public class ReturnFrequencyOfWordsInGiven {
     }
     public static Map<String,Integer> returnFrequencyOfWords(String s){
         s=s.toLowerCase();
-//      s=s.replaceAll("!","");
+
+//     s=s.replaceAll("!","");
 //      s=s.replaceAll(".","");
  Map<String,Integer> map1 = new HashMap<>();
  String[] arr = s.split(" ");
