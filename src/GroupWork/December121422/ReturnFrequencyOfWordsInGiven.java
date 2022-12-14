@@ -7,12 +7,12 @@ import java.util.Map;
 public class ReturnFrequencyOfWordsInGiven {
     public static void main(String[] args) {
         String s=" this is an eXample!! of an example....";
-        System.out.println(ReturnFrequencyOfWords(s));
+        System.out.println(returnFrequencyOfWords(s));
     }
-    public static Map<String,Integer> ReturnFrequencyOfWords(String s){
+    public static Map<String,Integer> returnFrequencyOfWords(String s){
         s=s.toLowerCase();
-      s=s.replaceAll("!","");
-      s=s.replaceAll(".","");
+//      s=s.replaceAll("!","");
+//      s=s.replaceAll(".","");
  Map<String,Integer> map1 = new HashMap<>();
  String[] arr = s.split(" ");
 
