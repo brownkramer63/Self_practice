@@ -6,7 +6,7 @@ import java.util.Map;
 
 public class ReturnFrequencyOfWordsInGiven {
     public static void main(String[] args) {
-        String s=" this is an eXample!! of an example....";
+        String s=" this          is an eXample!! of an example....";
         System.out.println(returnFrequencyOfWords(s));
     }
     public static Map<String,Integer> returnFrequencyOfWords(String s){
@@ -27,6 +27,7 @@ public class ReturnFrequencyOfWordsInGiven {
             }
 
         }
+        map1.remove("");
 
 return map1;
     }
