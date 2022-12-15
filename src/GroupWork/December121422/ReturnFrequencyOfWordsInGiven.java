@@ -12,15 +12,16 @@ public class ReturnFrequencyOfWordsInGiven {
     public static Map<String,Integer> returnFrequencyOfWords(String s){
         s=s.toLowerCase();
 
-//     s=s.replaceAll("!","");
-//      s=s.replaceAll(".","");
+  s=s.replaceAll("[^a-zA-Z\\s]","");
+ s=s.trim();
+
  Map<String,Integer> map1 = new HashMap<>();
  String[] arr = s.split(" ");
 
         for (int i = 0; i <arr.length ; i++) {
 
             if (map1.containsKey(arr[i])){
-                map1.put(arr[i],map1.get(arr[i]+1) );
+                map1.put(arr[i],map1.get(arr[i])+1 );
             }else {
                 map1.put(arr[i],1 );
             }
