@@ -24,4 +24,9 @@ int[] opp={3, 7, 3, 1, 2};
       }
 return false;
     }
+//    public static boolean winRound(int[] a, int[] b) {
+//        Arrays.sort(a);
+//        Arrays.sort(b);
+//        return a[4]*10+a[3]>b[4]*10+b[3];
+//    }
 }
