@@ -7,6 +7,6 @@ public class Sales {
     }
     public static double discount(int price, int percentage) {
         return price - (percentage * price) / 100;
-
+//study
     }
 }
