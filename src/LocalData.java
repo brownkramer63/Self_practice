@@ -8,4 +8,7 @@ public class LocalData {
 
         System.out.println(today.format(df));//add to project
     }
+
+    //dont forget to work on hashmap profit changes
+
 }
