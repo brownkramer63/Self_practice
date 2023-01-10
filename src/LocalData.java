@@ -6,6 +6,6 @@ public class LocalData {
         LocalDate today = LocalDate.now();
         DateTimeFormatter df= DateTimeFormatter.ofPattern("y MMMM");
 
-        System.out.println(today.format(df));
+        System.out.println(today.format(df));//add to project
     }
 }
