@@ -37,7 +37,7 @@ public class ProductOfArrayExceptSelf {
         for (int i = 0; i <a ; i++) {
             answer[i]=left[i]*right[i];
         }
-
+//this is the correct way to do this
         return answer;
 
 
