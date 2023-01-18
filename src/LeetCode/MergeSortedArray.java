@@ -24,6 +24,14 @@ ArrayList<Integer> lists= new ArrayList<>();
             lists.add(nums2[i]);
         }
         answer=lists.stream().sorted().mapToInt(Integer::intValue).toArray();
+        for (int i = 0; i <nums1.length ; i++) {
+            nums1[i]=lists.get(i);
+        }
+
+
         return answer;
+
+
     }
+
 }
