@@ -26,6 +26,7 @@ public class LengthOfLastWord {
                 break;
             }
         }
+        //study this for interviews
 while (!stack1.isEmpty()){
     stack1.pop();
     answer++;
