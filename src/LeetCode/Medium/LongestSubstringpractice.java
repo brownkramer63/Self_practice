@@ -18,6 +18,7 @@ public class LongestSubstringpractice {
           //i want to iterate my array1 and add each instance to the holder then add that to arraylist
           //then check if the array list holds it and if so return
           // so if i have abcabcbb it will add abc
+          //good try
           for (int i = 0; i < array1.length ; i++) {
               holder=holder+array1[i]+"";
               if (!arraylist1.contains(holder)){
