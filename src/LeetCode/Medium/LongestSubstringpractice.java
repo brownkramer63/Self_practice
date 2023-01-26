@@ -1,11 +1,12 @@
 package LeetCode.Medium;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class LongestSubstringpractice {
     public static void main(String[] args) {
-        String str="abcabcc";
-        System.out.println(lostLength(str));
+        String str="abcabcec";
+        System.out.println(lenghtOfString(str));
     }
     public static int lostLength(String str){
         char[] array1 =str.toCharArray();
@@ -35,4 +36,18 @@ public class LongestSubstringpractice {
 
 return answer1;
     }
-}
+    public static int lenghtOfString(String str) {
+        List<Character> list = new ArrayList<>();
+
+        if (str == null) return -1;
+        if (!str.isEmpty()) {
+            for (int i = 0; i < str.length(); i++) {
+                if (!list.contains(str.charAt(i))) {
+                    list.add(str.charAt(i));
+                }
+            }
+            return list.size();
+        } else {
+            return 0;
+        }
+}}
