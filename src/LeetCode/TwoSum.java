@@ -1,12 +1,15 @@
 package LeetCode;
 
+import java.util.Arrays;
 import java.util.HashMap;
 
 public class TwoSum {
     public static void main(String[] args) {
+        int[] nums={2,7,11,15};
+        System.out.println(Arrays.toString(twosum(nums,9)));
 
     }
-    public int[]twosum(int[] arr,int target){
+    public static int[]twosum(int[] arr,int target){
 
         HashMap<Integer,Integer> map1 = new HashMap<>();
         int counter= 0;
