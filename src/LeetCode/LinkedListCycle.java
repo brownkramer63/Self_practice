@@ -28,4 +28,7 @@ public class LinkedListCycle {
         ListNode(int x) {
             val = x;
             next = null;
+            //this class has two parts
+            //first is the node class which has the Value and the next which points to somethings
+
         }}
