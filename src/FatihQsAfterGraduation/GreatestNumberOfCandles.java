@@ -10,6 +10,8 @@ public class GreatestNumberOfCandles {
         int extras=1;
 
         System.out.println(Arrays.toString(greatestCandies(arr,extras)));
+        //extra stuff below
+        System.out.println("-----------------------");
         System.out.println(arr.length);
         System.out.println(Arrays.toString(new int[5]));
         ArrayList<String> list = new ArrayList(Arrays.asList("Ryan", "Julie", "Bob","d","d"));
