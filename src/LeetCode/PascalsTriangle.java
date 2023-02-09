@@ -6,9 +6,8 @@ import java.util.List;
 public class PascalsTriangle {
     public static void main(String[] args) {
 
-        System.out.println(Arrays.toString(generate(5).toArray()));
     }
-    public static List<List<Integer>> generate(int numRows) {
+    public static void generate(int numRows) {
         int[][] pascal = new int[numRows][];
         for (int i = 0; i < numRows; i++){
             int[] row = new int[i + 1];
@@ -19,6 +18,8 @@ public class PascalsTriangle {
             }
             pascal[i] = row;
         }
-        return (List)Arrays.asList(pascal);
+        for (int i = 0; i <numRows ; i++) {
+
+        }
     }
 }
