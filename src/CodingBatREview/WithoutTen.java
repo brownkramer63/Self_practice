@@ -10,7 +10,7 @@ int[] nums={1,10,10,2};
         System.out.println(Arrays.toString(withoutTen(nums)));
     }
     public static int[] withoutTen(int[] nums) {
-        ArrayList<Integer> arr= new ArrayList<Integer>(nums.length);
+        ArrayList<Integer> arr= new ArrayList<>();
         for (Integer each:nums
              ) {
             if (each!=10){
