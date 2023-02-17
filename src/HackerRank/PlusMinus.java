@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class PlusMinus {
     public static void main(String[] args) {
@@ -14,7 +15,14 @@ public class PlusMinus {
         arr.add(0);
         arr.add(4);
         arr.add(1);
+        List<Integer> arr1=new ArrayList<>();
+        arr1.add(256741038);
+        arr1.add(623958417);
+        arr1.add(467905213);
+        arr1.add(714532089);
+        arr1.add(938071625);
 plusMinus(arr);
+miniMaxSum(arr1);
     }
     public static void plusMinus(List<Integer> arr) {
         // Write your code here
@@ -37,5 +45,19 @@ plusMinus(arr);
         System.out.println(df.format(positive/divider));
         System.out.println(df.format(negative/divider));
         System.out.println(df.format(zero/divider));
+    }
+    public static void miniMaxSum(List<Integer> arr) {
+        // Write your code here
+        int lower=0;
+        int higher=0;
+      arr= arr.stream().sorted().collect(Collectors.toList());
+        for (int i = 1; i <arr.size() ; i++) {
+           higher=higher+arr.get(i);
+        }
+        for (int i = 0; i <arr.size()-1 ; i++) {
+            lower=lower+ arr.get(i);
+        }
+        System.out.println(lower+" "+higher);
+
     }
 }
