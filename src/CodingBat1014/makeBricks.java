@@ -3,7 +3,7 @@ package CodingBat1014;
 public class makeBricks {
     public static void main(String[] args) {
 
-        System.out.println(makeBricks(3,2,9));
+        System.out.println(makeBricks(3,2,8));
     }
     public static boolean makeBricks(int small, int big, int goal) {
 
