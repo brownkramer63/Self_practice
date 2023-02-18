@@ -2,11 +2,12 @@ package CodingBatREview;
 
 import java.util.Arrays;
 import java.util.HashMap;
+import java.util.Map;
 
 public class FirstSwap {
     public static void main(String[] args) {
-String[] strings={"ax", "bx", "ay", "by", "ai", "aj", "bx", "by"};
-        System.out.println(Arrays.toString(firstSwap(strings)));
+String[] strings={"salt", "tea", "soda", "toast"};
+        System.out.println(firstChar(strings));
     }
 
     public static String[] firstSwap(String[] strings) {
@@ -25,4 +26,31 @@ String[] strings={"ax", "bx", "ay", "by", "ai", "aj", "bx", "by"};
             }
         }
 return result   ;
-    }}
+    }
+    public Map<String, Integer> wordCount(String[] strings) {
+        HashMap<String,Integer> hashmap1 = new HashMap<>();
+        for(String each: strings){
+            if(hashmap1.containsKey(each)){
+              hashmap1.put(each,hashmap1.get(each)+1);
+            }else{
+                hashmap1.put(each,1);
+            }
+
+        }
+        return hashmap1;
+}
+    public static  Map<String, String> firstChar(String[] strings) {
+        HashMap<String,String> hashmap1=  new HashMap<>();
+        for(String each: strings){
+            if(hashmap1.containsKey(each.substring(0,1))){
+                hashmap1.put("holder",hashmap1.get(each.substring(0,1))+each);
+                hashmap1.put(each.substring(0,1),hashmap1.get("holder"));
+                hashmap1.remove("holder");
+
+            }else{
+                hashmap1.put(each.substring(0,1),each);
+            }
+        }
+        return hashmap1;
+    }
+}
