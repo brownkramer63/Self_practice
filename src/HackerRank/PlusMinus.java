@@ -46,10 +46,10 @@ miniMaxSum(arr1);
         System.out.println(df.format(negative/divider));
         System.out.println(df.format(zero/divider));
     }
-    public static void miniMaxSum(List<Integer> arr) {
+    public static void miniMaxSum1(List<Integer> arr) {
         // Write your code here
-        int lower=0;
-        int higher=0;
+        Long lower= Long.valueOf(0);
+        Long higher= Long.valueOf(0);
       arr= arr.stream().sorted().collect(Collectors.toList());
         for (int i = 1; i <arr.size() ; i++) {
            higher=higher+arr.get(i);
@@ -59,5 +59,21 @@ miniMaxSum(arr1);
         }
         System.out.println(lower+" "+higher);
 
+    }
+
+    public static void miniMaxSum(List<Integer> arr){
+        Long small= Long.valueOf(0);
+        Long large= Long.valueOf(0);
+        for (int i = 0; i <arr.size() ; i++) {
+            for (int j = 0; j <arr.size() ; j++) {
+                if (arr.get(i) != arr.get(j) && arr.get(i)+ arr.get(j)>large){
+                    large= Long.valueOf(arr.get(i)+ arr.get(j));
+                }
+                if (arr.get(i) != arr.get(j) && arr.get(i)+ arr.get(j)<small){
+                    small= Long.valueOf(arr.get(i)+ arr.get(j));
+                }
+            }
+        }
+        System.out.println(small+" "+large);
     }
 }
