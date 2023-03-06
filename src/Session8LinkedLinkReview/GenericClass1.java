@@ -20,6 +20,7 @@ public class GenericClass1<T> {
         return arr;
     }
     public static Long sum(GenericClass1<? extends Number> num1, GenericClass1<? extends Number> num2){
+        //? indicates that this can extend any of the subclass of number
         return num1.getT().longValue() + num2.getT().longValue();
     }
 
