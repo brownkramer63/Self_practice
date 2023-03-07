@@ -19,5 +19,22 @@ public class codingbatpractice {
         }
         return nums.length-1;
     }
+    public int[] fix34(int[] nums) {
+        int threeholder=0;
+        for(int i=0; i<nums.length ; i++){
+
+            if(nums[i]==3){
+                threeholder=i+1;
+            }
+            if(nums[i]==4){
+                nums[i]=nums[threeholder];
+                nums[threeholder]=4;
+                threeholder=0;
+
+            }
+
+        }
+        return nums;
+    }
 
 }
