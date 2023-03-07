@@ -11,6 +11,9 @@ public class codingbatpractice {
         if(nums.length==1){
             return 1;
         }
+
+
+
         if(nums.length==2 && nums[0]!=nums[1]){
             return 1;
         }
