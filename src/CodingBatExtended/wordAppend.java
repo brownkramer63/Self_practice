@@ -20,18 +20,20 @@ public class wordAppend {
         String answer="";
         for (Map.Entry<String,Integer> ss:hash1.entrySet()
              ) {
+            if (!(ss.getValue()%2==0)){
+            int G= (ss.getValue()-1)/2;
+            for (int i = 0; i <G ; i++) {
+                answer=answer+ss.getKey();
+            }}
             if (ss.getValue()%2==0){
                 int K =ss.getValue()/2;
                 for (int i=0; i <K ; i++) {
                     answer=answer+ss.getKey();
                 }
-            }else {
-                int G= (ss.getValue()-1)/2;
-                for (int i = 0; i <G ; i++) {
-                    answer=answer+ss.getKey();
-                }
             }
-        }
+
+            }
+
         return answer;
     }
 }
