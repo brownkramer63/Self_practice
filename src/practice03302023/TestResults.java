@@ -26,24 +26,24 @@ public class TestResults {
         }
     }
 
-    public static List<String> studentsThatPass(Stream<Student> students, int passingScore) {
+//    public static List<String> studentsThatPass(Stream<Student> students, int passingScore) {
+//
+//        List<String> collect = Collections.reverse(students.filter(student -> student.getScore() >= passingScore)
+//                .sorted(Comparator.comparing(student -> student.score))
+//                .map(student -> student.name).collect(Collectors.toList()));
+//        Collections.reverse(collect);
+//        return collect;
+//
+//    }
 
-        List<String> collect = Collections.reverse(students.filter(student -> student.getScore() >= passingScore)
-                .sorted(Comparator.comparing(student -> student.score))
-                .map(student -> student.name).collect(Collectors.toList()));
-        Collections.reverse(collect);
-        return collect;
-
-    }
-
-    public static void main(String[] args) {
-
-        List<Student> students = new ArrayList<Student>();
-
-        students.add(new Student("Mike", 80));
-        students.add(new Student("James", 57));
-        students.add(new Student("Alan", 21));
-
-        studentsThatPass(students.stream(), 50).forEach(System.out::println);
-    }
+//    public static void main(String[] args) {
+//
+//        List<Student> students = new ArrayList<Student>();
+//
+//        students.add(new Student("Mike", 80));
+//        students.add(new Student("James", 57));
+//        students.add(new Student("Alan", 21));
+//
+//        studentsThatPass(students.stream(), 50).forEach(System.out::println);
+//    }
 }
