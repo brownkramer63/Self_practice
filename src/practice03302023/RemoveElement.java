@@ -21,6 +21,6 @@ public class RemoveElement {
         for (int i = 0; i <arr.size() ; i++) {
             nums[i]=arr.get(i);
         }
-        return nums.length-answer;//
+        return nums.length-answer;///
     }
 }
