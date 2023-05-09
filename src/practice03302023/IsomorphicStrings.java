@@ -33,7 +33,7 @@ public class IsomorphicStrings {
                 arr1.add(s.charAt(i));
                 arr2.add(hash1.get(s.charAt(i)));
             }
-        }
+        }//p
         //first part
         holder=0;
         ArrayList<Character> arr3 = new ArrayList<>();
